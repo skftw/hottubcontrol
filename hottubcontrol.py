@@ -12,7 +12,7 @@ import threading
 
 
 #Set configurable constants
-#Output pins - BCM numbering
+##Output pins - BCM numbering##
 pumpLowPin = 9
 pumpHighPin = 10
 heaterPin = 11
@@ -20,7 +20,7 @@ blowerPin = 8
 lightPin = 7
 buttonLedPin = 4
 
-#Input pins - BCM numbering
+##Input pins - BCM numbering##
 pumpButtonPin = 25
 blowerButtonPin = 14 
 lightButtonPin = 15
@@ -28,7 +28,7 @@ modeButtonPin = 17
 tempUpButtonPin = 18
 tempDownButtonPin = 23
 
-#User options
+##User options##
 debug = 0
 defaultMode = 1 #On first boot, use this mode. 0 is filter only, 1 is schedule mode, 2 is hold temp
 inactivityTimeoutMinutes = 60
@@ -47,6 +47,7 @@ buttonBounceTime = 300 #Lower for better button response, raise to avoid acciden
 enableWebOutput = 0
 webOutputFile = "/dev/shm/hottubstatus" #This should be something in RAM to avoid excessive writes to the SD card
 tempSensorAddress = "031722cbb8ff" #Check for this in /sys/bus/w1/devices/
+##End user options##
 
 
 lcd = I2C_LCD_driver.lcd() #Initialize LCD
