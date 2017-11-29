@@ -333,6 +333,7 @@ def pollButton(pin): #This is the time-based polling GPIO read
 def readButtons():
     global runMode
     global targetTemp
+    global turnOnTemp
     global manualMode
     global buttonPressTime
     #Kill screen saver on first press of any button, without activating that button's function
